@@ -1,0 +1,17 @@
+row=c("row1","row2","row3")
+ col=c("col1","col2","col3")
+ matname=c("CSE","CSE_B")
+ a=c(10,20,30,40,50)
+ b=c(2,3,4,5)
+ x=array(c(a,b),dim=c(3,3,2),dimnames=list(row,col,matname))
+ y=array(c(a,b),dim=c(3,3,2),dimnames=list(row,col,matname))
+ m1=x[,,1]
+ m2=x[,,2]
+ paste("additon is: ")
+ print(m1+m2)
+ paste("subtraction is: ")
+ print(m1-m2)
+ paste("multipication is: ")
+ print(m1*m2)
+ paste("divison is: ")
+ print(m1/m2)
